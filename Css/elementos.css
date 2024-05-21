@@ -1,0 +1,141 @@
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.inputGroup input {
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup input:valid {
+    border-color: #007bff;
+}
+
+.inputGroup label {
+    font-size: 0.9rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.8rem; /* Ajuste en esta línea */
+    padding: 0.25rem 0.5rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #ff0101;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:valid + label {
+    top: -0.1rem; /* Ajuste en esta línea */
+    left: 1.3rem;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #007bff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 10px;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:valid + label,
+.inputGroup input:not(:placeholder-shown) + label {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.inputGroup input:invalid {
+    border-color: #565656;
+}
+
+.inputGroup input:invalid + label {
+    color: #565656;
+}
+
+.inputGroup input:invalid:focus + label {
+    color: #565656;
+}
+
+.inputGroup input:invalid + label::after {
+    content: ' - Campo obligatorio';
+    font-size: 0.7rem;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:valid + label {
+    border: 2px solid #007bff;
+}
+
+
+.customSelectGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.customSelectGroup select {
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.customSelectGroup select:focus,
+.customSelectGroup select:valid {
+    border-color: #007bff;
+}
+
+.customSelectGroup label {
+    font-size: 0.9rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.8rem; /* Ajuste en esta línea */
+    padding: 0.25rem 0.5rem;
+    pointer-events: none;
+    color: #ff0101;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.customSelectGroup select:focus + label,
+.customSelectGroup select:valid + label {
+    top: -0.1rem; /* Ajuste en esta línea */
+    left: 1.3rem;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #007bff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 10px;
+}
+
+.customSelectGroup select:invalid {
+    border-color: #565656;
+}
+
+.customSelectGroup select:invalid + label {
+    color: #565656;
+}
+
+.customSelectGroup select:invalid:focus + label {
+    color: #565656;
+}
+
+.customSelectGroup select:invalid + label::after {
+    content: ' - Campo obligatorio';
+    font-size: 0.7rem;
+}
+
+.customSelectGroup select:focus + label,
+.customSelectGroup select:valid + label {
+    border: 2px solid #007bff;
+}

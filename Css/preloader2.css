@@ -1,0 +1,27 @@
+/* Estilos del preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Fondo blanco */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOutAnimation 2s ease forwards; /* Ajustamos la duración a 2 segundos */
+    pointer-events: none; /* Permitir eventos del ratón */
+
+}
+
+@keyframes fadeOutAnimation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Estilos del contenido de la página */
+.content {
+    display: none; /* Por defecto oculto hasta que se cargue la página */
+    
+}
